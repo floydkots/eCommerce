@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 
+from orders.models import Order
 from products.models import Product
 from .models import Cart
 
@@ -25,3 +26,12 @@ def cart_update(request):
             cart.products.add(product)
         request.session['cart_items'] = cart.products.count()
     return redirect('cart:home')
+
+
+def checkout_home(request):
+    cart_obj, cart_created = Cart.objects.new_or_get(request)
+    if cart_created or cart_obj.products.count() == 0:
+        return redirect('cart:home')
+    else:
+        order_obj, order_created = Order.objects.get_or_create(cart=cart_obj)
+    return render(request, 'carts/checkout.html', {'object': order_obj})
