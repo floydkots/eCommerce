@@ -21,7 +21,8 @@ class OrderManager(models.Manager):
         qs = self.get_queryset().filter(
             billing_profile=billing_profile,
             cart=cart_obj,
-            active=True
+            active=True,
+            status='created'
         )
         if qs.count() == 1:
             obj = qs.first()
@@ -57,6 +58,22 @@ class Order(models.Model):
         self.order_total = new_total
         self.save()
         return new_total
+
+    def check_done(self):
+        billing_profile = self.billing_profile
+        shipping_address = self.shipping_address
+        billing_address = self.billing_address
+        total = self.order_total
+        if billing_profile and shipping_address and billing_address and total > 0:
+            return True
+        return False
+
+    def mark_paid(self):
+        if self.check_done():
+            self.status = 'paid'
+            self.save()
+        return self.status
+
 
 
 def pre_save_create_order_id(sender, instance, *args, **kwargs):
