@@ -27,7 +27,10 @@ from accounts.views import (
     guest_register_view
 )
 
-from addresses.views import checkout_address_create_view
+from addresses.views import (
+    checkout_address_create_view,
+    checkout_address_reuse_view
+)
 
 from .views import home_page, about_page, contact_page
 
@@ -40,6 +43,7 @@ urlpatterns = [
     url(r'^login/$', login_page, name='login'),
     url(r'^logout/$', LogoutView.as_view(), name='logout'),
     url(r'^checkout/address/create/$', checkout_address_create_view, name='checkout_address_create'),
+    url(r'^checkout/address/reuse/$', checkout_address_reuse_view, name='checkout_address_reuse'),
     url(r'^cart/', include('carts.urls', namespace='cart')),
     url(r'^products/', include('products.urls', namespace='products')),
     url(r'^search/', include('search.urls', namespace='search')),
