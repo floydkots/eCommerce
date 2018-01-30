@@ -11,6 +11,21 @@ from products.models import Product
 from .models import Cart
 
 
+def cart_detail_api_view(request):
+    cart, new = Cart.objects.new_or_get(request)
+    products = [
+        {
+            'id': x.id,
+            'url': x.get_absolute_url(),
+            'name': x.title,
+            'price': x.price
+        } for x in cart.products.all()
+    ]
+
+    cart_data = {'products': products, 'subtotal': cart.subtotal, 'total': cart.total}
+    return JsonResponse(cart_data)
+
+
 def cart_home(request):
     cart, new = Cart.objects.new_or_get(request)
 
