@@ -51,7 +51,7 @@ class User(AbstractBaseUser):
 
     REQUIRED_FIELDS = []
 
-    objects = UserManager
+    objects = UserManager()
 
     def __str__(self):
         return self.email
@@ -72,7 +72,7 @@ class User(AbstractBaseUser):
 
     @property
     def is_active(self):
-        return self.is_active
+        return self.active
 
 
 class GuestEmail(models.Model):

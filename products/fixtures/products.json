@@ -1,0 +1,72 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "T-Shirt",
+        "slug": "t-shirt-4hq9",
+        "description": "This is an awesome shirt! Buy it",
+        "price": "39.99",
+        "image": "products/166206188/166206188.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2018-01-22T15:56:51.824Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "This is an awesome hat!",
+        "price": "39.99",
+        "image": "products/3025546/3025546.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2018-01-22T15:56:51.824Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Supercomputer",
+        "slug": "supercomputer",
+        "description": "Awesome computer!",
+        "price": "3999999.99",
+        "image": "",
+        "featured": true,
+        "active": false,
+        "timestamp": "2018-01-22T15:56:51.824Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "title": "Lorem Ipsum",
+        "slug": "lorem-ipsum",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nisi ex. Nunc gravida efficitur quam, in fringilla nisi. Quisque quis nulla sit amet sem ullamcorper pellentesque non at tellus. Morbi venenatis scelerisque imperdiet. Etiam magna felis, convallis et ante sed, tempus commodo lectus. Donec sit amet ex id diam posuere luctus in at nisi. Duis euismod, justo in faucibus posuere, est lorem bibendum purus, nec vehicula nibh justo ac justo. Integer aliquam pretium rutrum. Nam eu tellus quis odio lobortis commodo.\r\n\r\nProin maximus orci a sem facilisis, viverra facilisis nibh sollicitudin. Aliquam id sagittis purus. In hendrerit nibh eu nisi lobortis, eget vehicula erat congue. Duis non magna lorem. Integer vitae turpis sit amet magna venenatis viverra. Vivamus aliquet ornare justo at varius. Mauris rutrum eleifend turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a iaculis quam. Donec et tortor ligula. Suspendisse potenti.\r\n\r\nFusce gravida enim ac lobortis blandit. Phasellus pretium vehicula nisi, id eleifend lorem. Aenean tincidunt, dui nec aliquam imperdiet, erat mi vestibulum purus, ut pulvinar justo nulla sit amet nisi. Maecenas fermentum molestie condimentum. Sed id venenatis felis. Ut vel vulputate magna. Phasellus eleifend erat tempus lorem consequat, eu finibus dui posuere. Pellentesque bibendum mollis diam, eget gravida tortor porttitor eu. Donec accumsan lorem et est mattis pretium.\r\n\r\nNulla et ipsum in velit vehicula hendrerit et non dui. Aenean vel sapien egestas lectus pharetra elementum. Nam egestas neque at diam varius, et fermentum ex congue. Sed sed blandit velit. Pellentesque sit amet tincidunt leo. Fusce rhoncus orci sit amet est accumsan, vel aliquam nulla euismod. Etiam convallis, diam sed varius lacinia, tortor ipsum sagittis enim, condimentum pharetra felis mauris non risus. Maecenas ullamcorper hendrerit nisi, vitae scelerisque turpis fringilla sit amet. Phasellus a ipsum ut sapien scelerisque scelerisque a ut est. Vivamus pretium enim id mauris imperdiet, sit amet hendrerit velit congue. Proin malesuada tempor nisl et blandit. Proin a maximus dolor. Integer eu vestibulum quam. Morbi eleifend sapien ac varius lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\r\n\r\nCras ut libero lacinia, hendrerit nunc quis, imperdiet felis. Proin id gravida felis, dictum finibus orci. Nulla eget mollis risus, eu blandit libero. Etiam faucibus at purus et vehicula. Aliquam accumsan risus sapien, ut viverra ligula imperdiet eu. Etiam id hendrerit magna. Mauris eget tempus nulla. Quisque eu felis tempor ligula interdum facilisis. Maecenas euismod leo ac risus scelerisque, vel suscipit lectus tincidunt. Cras consequat aliquet posuere.",
+        "price": "39.99",
+        "image": "products/58637553/58637553.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2018-01-22T15:56:51.824Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "T Shirt",
+        "slug": "t-shirt",
+        "description": "Variety of colored t shirts to choose from.",
+        "price": "50.00",
+        "image": "products/31685157/31685157.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2018-01-23T10:52:04.484Z"
+    }
+}
+]
