@@ -144,3 +144,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'static_root')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static_cdn', 'media_root')
+
+
+STRIPE_API_KEY = os.environ.get('STRIPE_API_KEY')

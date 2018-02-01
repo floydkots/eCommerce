@@ -1,10 +1,15 @@
+import stripe
+
 from django.conf import settings
 from django.db import models
 from django.db.models.signals import post_save
 
 from accounts.models import GuestEmail
 
+
 User = settings.AUTH_USER_MODEL
+
+stripe.api_key = getattr(settings, 'STRIPE_API_KEY')
 
 
 class BillingProfileManager(models.Manager):
