@@ -29,7 +29,10 @@ from addresses.views import (
     checkout_address_create_view,
     checkout_address_reuse_view
 )
-from billing.views import payment_method_view
+from billing.views import (
+    payment_method_view,
+    payment_method_create_view
+)
 from carts.views import cart_detail_api_view
 
 from .views import home_page, about_page, contact_page
@@ -46,7 +49,8 @@ urlpatterns = [
     url(r'^checkout/address/reuse/$', checkout_address_reuse_view, name='checkout_address_reuse'),
     url(r'^api/cart/$', cart_detail_api_view, name='api-cart'),
     url(r'^cart/', include('carts.urls', namespace='cart')),
-    url(r'^billing/payment-method/', payment_method_view, name='billing_payment_method'),
+    url(r'^billing/payment-method/$', payment_method_view, name='billing_payment_method'),
+    url(r'^billing/payment-method/create/$', payment_method_create_view, name='billing_payment_method_endpoint'),
     url(r'^products/', include('products.urls', namespace='products')),
     url(r'^search/', include('search.urls', namespace='search')),
     url(r'^admin/', admin.site.urls),
