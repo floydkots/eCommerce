@@ -25,3 +25,6 @@ class ObjectViewed(models.Model):
         verbose_name_plural = 'Objects viewed'
 
 
+
+
+
